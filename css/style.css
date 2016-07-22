@@ -222,7 +222,7 @@ Main components
 }
 
 .cd-fixed-bg.cd-bg-1 {
-    background-image: url("../img/cd background-1.jpg");
+    background-image: url("../img/cd-background-3.jpg");
 }
 
 .cd-fixed-bg.cd-bg-2 {
@@ -230,7 +230,7 @@ Main components
 }
 
 .cd-fixed-bg.cd-bg-3 {
-    background-image: url("../img/cd-background-3.jpg");
+    background-image: url("../img/cd%20background-1.jpg");
 }
 
 .cd-fixed-bg.cd-bg-4 {
@@ -258,33 +258,131 @@ Main components
 .cd-scrolling-bg {
     position: relative;
     min-height: 100%;
-    padding: 4em 0;
+    /*    padding: 4em 0;*/
     line-height: 1.6;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 
 .cd-scrolling-bg.cd-color-1 {
-    background-color: #FF0022;
-    color: #a6989a;
+    background-color: #8E0000;
+    color: #fff;
 }
 
 .cd-scrolling-bg.cd-color-2 {
-    background-color: #FF0022;
-    color: #3d3536;
+    background-color: #EFC92F;
+    color: #000;
 }
 
 .cd-scrolling-bg.cd-color-3 {
-    background-color: #b4d7a8;
-    color: #3d3536;
+    background-color: #FF0022;
+    color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
     .cd-scrolling-bg {
-        padding: 8em 0;
+        /*        padding: 8em 0;*/
         font-size: 20px;
         font-size: 1.25rem;
         line-height: 2;
         font-weight: 300;
     }
+}
+
+
+/*      first div hover effects*/
+
+  /*first div hover effects*/
+
+  @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Cardo);
+figure.snip1524 {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+}
+
+figure.snip1524 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+figure.snip1524 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+figure.snip1524 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 4px solid rgba(255, 255, 255, 0.05);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 0 0%;
+  -ms-transform-origin: 0 0%;
+  transform-origin: 0 0%;
+}
+
+figure.snip1524 h2,
+figure.snip1524 p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+figure.snip1524 h2 {
+  font-family: 'Cardo', serif;
+  display: inline-block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+figure.snip1524 p {
+  padding: 8px 0 15px;
+}
+
+figure.snip1524 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+figure.snip1524:hover > img,
+figure.snip1524.hover > img {
+  opacity: 0.2;
+}
+
+figure.snip1524:hover figcaption,
+figure.snip1524.hover figcaption {
+  -webkit-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+
+
+/* Demo purposes only */
+
+body {
+  background-color: #212121;
 }
